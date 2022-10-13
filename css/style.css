@@ -17,13 +17,21 @@
 body {
     background-color: var(--Cream);
     min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
 }
 
 .container {}
 
-.card {}
+.card {
+    width: 600px;
+    height: 450px;
+}
 
-.card-img {}
+.card-img {
+    /* max-width: 345px; */
+}
 
 .card-trademark {}
 
@@ -40,3 +48,23 @@ body {
 .card-btn {}
 
 .icon-card {}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 739px) {
+    body {}
+    .container {}
+    .card {}
+    .card-img {
+        max-width: 345px;
+    }
+    .card-trademark {}
+    .card-title {}
+    .card-desc {}
+    .card-price {}
+    .card-price_big {}
+    .card-price_small {}
+    .card-btn {}
+    .icon-card {}
+}
