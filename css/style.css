@@ -1,3 +1,4 @@
+@import "animate.css";
 :root {
     --Dark-cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
@@ -14,50 +15,120 @@
     box-sizing: border-box;
 }
 
+a {
+    display: block;
+    text-decoration: none;
+}
+
 body {
     background-color: var(--Cream);
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1440px;
 }
 
-.container {}
+.container {
+    display: flex;
+    align-items: center;
+}
 
 .card {
     width: 600px;
     height: 450px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .card-img {
-    /* max-width: 345px; */
+    background-image: url(../img/image-product-desktop.jpg);
+    min-width: 50%;
+    height: 450px;
+    background-size: cover;
 }
 
-.card-trademark {}
+.card-info {
+    background-color: var(--White);
+    padding: 40px 35px;
+}
 
-.card-title {}
+.card-trademark {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--Montserrat);
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
 
-.card-desc {}
+.card-title {
+    font-size: 30px;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    line-height: 30px;
+}
 
-.card-price {}
+.card-desc {
+    color: var(--Dark-grayish-blue);
+    font-size: 15px;
+    line-height: 22px;
+    margin: 30px 0px;
+}
 
-.card-price_big {}
+.card-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
-.card-price_small {}
+.card-price_big {
+    color: var(--Dark-cyan);
+    font-size: 30px;
+    font-family: var(--Fraunces);
+    font-weight: 700;
+    margin-right: 20px;
+}
 
-.card-btn {}
+.card-price_small {
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.card-btn {
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 60px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card-btn:hover {
+    background-color: var(--Very-dark-blue);
+}
 
 .icon-card {}
 
 
 /*RESPONSIVE*/
 
-@media screen and (max-width: 739px) {
+@media screen and (max-width: 650px) {
     body {}
     .container {}
-    .card {}
+    .card {
+        flex-direction: column;
+    }
     .card-img {
-        max-width: 345px;
+        background-image: url(../img/image-product-mobile.jpg);
     }
     .card-trademark {}
     .card-title {}
