@@ -55,29 +55,30 @@ body {
 
 .card-info {
     background-color: var(--White);
-    padding: 40px 35px;
+    padding: 30px 35px;
 }
 
 .card-trademark {
     color: var(--Dark-grayish-blue);
     font-family: var(--Montserrat);
     font-weight: 500;
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 20px;
+    letter-spacing: 8px;
 }
 
 .card-title {
-    font-size: 30px;
-    font-family: var(--Montserrat);
+    line-height: 1;
+    font-family: var(--Fraunces);
     font-weight: 700;
-    line-height: 30px;
+    font-size: 34px;
 }
 
 .card-desc {
     color: var(--Dark-grayish-blue);
     font-size: 15px;
     line-height: 22px;
-    margin: 30px 0px;
+    margin: 20px 0px;
 }
 
 .card-price {
@@ -88,14 +89,14 @@ body {
 
 .card-price_big {
     color: var(--Dark-cyan);
-    font-size: 30px;
     font-family: var(--Fraunces);
-    font-weight: 700;
+    font-size: 30px;
     margin-right: 20px;
 }
 
 .card-price_small {
-    color: var(--Dark-grayish-blue);
+    font-family: var(--Fraunces);
+    /* font-weight: 400; */
     text-decoration: line-through;
 }
 
@@ -110,6 +111,7 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    font-weight: 700;
 }
 
 .card-btn:hover {
@@ -126,6 +128,8 @@ body {
     .container {}
     .card {
         flex-direction: column;
+        width: 500px;
+        height: 700px;
     }
     .card-img {
         background-image: url(../img/image-product-mobile.jpg);
@@ -133,9 +137,16 @@ body {
     .card-trademark {}
     .card-title {}
     .card-desc {}
-    .card-price {}
+    .card-price {
+        justify-content: center;
+    }
     .card-price_big {}
     .card-price_small {}
-    .card-btn {}
-    .icon-card {}
+    .card-btn {
+        margin-left: 22.3333%;
+        width: 220px;
+    }
+    .icon-card {
+        margin-right: 5px;
+    }
 }
