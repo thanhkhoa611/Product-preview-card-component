@@ -133,6 +133,7 @@ body {
     }
     .card-img {
         background-image: url(../img/image-product-mobile.jpg);
+        padding-top: 50%;
     }
     .card-trademark {}
     .card-title {}
